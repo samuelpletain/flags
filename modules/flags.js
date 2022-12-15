@@ -55,10 +55,6 @@ export default class Flags {
   }
 
   getFilteredDataset(filter) {
-    return this.dataset.filter(obj => obj.name.common.toLowerCase().includes(filter))
-  }
-
-  getFilteredDatasetRegion(region) {
-    return this.dataset.filter(obj => console.log(obj.region !== region)) 
+    return this.dataset.filter(obj => obj.name.common.toLowerCase().includes(filter.toLowerCase()))
   }
 }
